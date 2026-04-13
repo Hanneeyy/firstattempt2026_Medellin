@@ -32,7 +32,7 @@ A fully realized desktop web application for the **Ateneo de Davao University Al
 > 5. Improve usability where needed to better suit desktop experiences. Ensure responsiveness.
 > 6. Therefore, I want a complete desktop website design system (all pages/screens included). Consistent styling across all components."
 
-> **File Attachment Used:** [DONATION.pdf](screenshots&pdf/DONATION.df)
+> **File Attachment Used:** [DONATION.pdf](screenshots&pdf/DONATION.pdf)
 ---
 
 ## Installation
