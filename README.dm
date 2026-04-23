@@ -23,7 +23,7 @@ A fully realized desktop web application for the **Ateneo de Davao University Al
 > *The following prompt was used with Gemini Pro along with an attached PDF of the mobile app design from Activity #10:*
 
 **First & Main Prompt:**
-> "Hello! Transform the provided mobile PDF design (DONATION.pdf) into a fully  desktop website design.
+> "Hello! Transform the provided mobile PDF design (Ateneo donation app) into a fully realized desktop website design.
 >
 > Requirements:
 > 1. Replicate all screens, features, and functions found in the PDF. Ensure that nothing is omitted from the original design. Adapt mobile interactions into desktop-friendly layouts and behaviors.
@@ -32,7 +32,8 @@ A fully realized desktop web application for the **Ateneo de Davao University Al
 > 5. Improve usability where needed to better suit desktop experiences. Ensure responsiveness.
 > 6. Therefore, I want a complete desktop website design system (all pages/screens included). Consistent styling across all components."
 
-> **File Attachment Used:** [DONATION.pdf](screenshots&pdf/DONATION.pdf)
+> **File Attachment Used:** PDF of the mobile app design from Activity #10
+
 ---
 
 ## Installation
@@ -112,39 +113,34 @@ Follow these steps exactly to run this project on a brand new Windows PC.
 
 ## Screenshots
 
+> *(Replace the placeholders below with actual screenshots of your running web application. Each screenshot should show the full browser window.)*
+
 **Screenshot 1 — Login Page**
-![Login Page](screenshots&pdf/01_login.png)
+![Login Page](screenshots/01_login.png)
 
-**Screenshot 2 — Academic Passport**
-![Passport](screenshots&pdf/02_academic_passport.png)
+**Screenshot 2 — Alumni Home / Dashboard**
+![Home Dashboard](screenshots/02_home_dashboard.png)
 
-**Screenshot 3 — Discover & Create Fundraisers)**
-![Discover](screenshots&pdf/03_discover.png)
+**Screenshot 3 — Donation Hub (Campaign List)**
+![Donation Hub](screenshots/03_donation_hub.png)
 
-**Screenshot 4 — Pledge & Automate**
-![Pledge](screenshots&pdf/04_automate.png)
+**Screenshot 4 — Campaign Detail & Donate Page**
+![Campaign Detail](screenshots/04_campaign_detail.png)
 
-**Screenshot 5 — Student Project Donation**
-![Student Project](screenshots&pdf/05_sdonation.png)
+**Screenshot 5 — Post-Donation Confirmation**
+![Post Donation](screenshots/05_post_donation.png)
 
-**Screenshot 6 — Transaction History**
-![Transaction](screenshots&pdf/06_history.png)
+**Screenshot 6 — Impact Details & Pledge Page**
+![Impact and Pledge](screenshots/06_impact_pledge.png)
 
-**Screenshot 7 — Emergency Donation**
-![Donation](screenshots&pdf/07_emerg.png)
+**Screenshot 7 — Network / Alumni Directory**
+![Network](screenshots/07_network.png)
 
 **Screenshot 8 — Admin Portal — Queue**
-![Admin Queue](screenshots&pdf/08_queue.png)
-![Admin Queue 1](screenshots&pdf/09_queue2.png)
+![Admin Queue](screenshots/08_admin_queue.png)
 
-**Screenshot 9 — Review for Verification**
-![Verification](screenshots&pdf/010_verification.png)
-
-**Screenshot 10 — Donation Insights**
-![Donation Insights](screenshots&pdf/11_insight.png)
-
-**Screenshot 11 — Alumni Coordinator Profile**
-![Coordinator Profile](screenshots&pdf/12_coords.png)
+**Screenshot 9 — Admin Portal — Insights**
+![Admin Insights](screenshots/09_admin_insights.png)
 
 ---
 
