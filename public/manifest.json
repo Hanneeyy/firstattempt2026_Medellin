@@ -1,0 +1,25 @@
+{
+  "name": "AdDU Nation - Alumni Hub",
+  "short_name": "AdDU Nation",
+  "description": "Ateneo de Davao University Alumni Hub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#002366",
+  "theme_color": "#002366",
+  "orientation": "portrait-primary",
+  "scope": "/",
+    "icons": [
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        }
+    ]
+}

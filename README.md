@@ -147,5 +147,81 @@ Follow these steps exactly to run this project on a brand new Windows PC.
 ![Coordinator Profile](screenshots&pdf/12_coords.png)
 
 ---
-
+ 
+<a name="activity-15"></a>
+## Activity 15 — PWA Conversion (AI-Assisted Coding Part 2)
+ 
+**Branch:** `feature/pwa-ready`
+ 
+---
+ 
+### AI Tools Used
+- **ChatGPT** — used for conceptual understanding before implementation
+- **Claude** — used for step-by-step implementation and guidance
+---
+ 
+### The Prompts
+ 
+For this activity, I decided to use two AI tools with two different purposes — one to help me understand, and one to guide me through the actual implementation.
+ 
+---
+ 
+**Prompt 1 — ChatGPT (Conceptual Understanding)**
+ 
+> "This is the task our professor wants us to accomplish. But, I am not knowledgeable on how to execute this. I want you to explain to me the process and explain each concept (manifest.json, service worker, caching strategies, and etc.)
+> Can you guide me through the process step-by-step and explain the main concepts in a simple way?
+> Please include:
+> * What a Service Worker is and how to register it
+> * Basic caching strategies and how they enable offline functionality
+> * How to make the app installable and handle app icons
+> * Why do we need these certain files (manifest.json, service worker, etc.)"
+ 
+> **Also attached:** The full activity instructions provided by the professor.
+ 
+---
+ 
+**Prompt 2 — Claude (Master Prompt / Implementation)**
+ 
+> "I need help completing this project by following the given instructions. Please guide me through the entire process step-by-step.
+> I've included the three files from my previous activity (Activity 14 -- main.html, main.css, main.jsx) so you can use them as a reference for my current setup.
+> Ask me questions if you need more details about my project so you can guide me more accurately and so that I could implement what is necessary properly.
+> I'd also appreciate brief explanations of what we're doing in each step so I can understand the process."
+ 
+> **Also attached:** `main.html`, `main.css`, `main.jsx` from Activity 14 and the full activity instructions provided by the professor.
+ 
+---
+ 
+## AI Hallucinations & Manual Fixes
+ 
+| # | Issue | What AI Got Wrong | Manual Fix Applied |
+|---|-------|-------------------|--------------------|
+| 1 | SW file location | AI suggested putting `sw.js` inside `/client` | Moved to `/public` — Meteor only serves static files from there |
+| 2 | `cp` command | AI used Linux `cp` command for copying icons | Replaced with Windows `copy` command |
+| 3 | Icon folder path | AI suggested using `screenshots&pdf` folder directly as icon source | Created a clean `/public/icons` folder to avoid `&` character URL issues |
+| 4 | Framework assumption | AI initially assumed `.jsx` meant React components | File is vanilla JavaScript — no React imports or JSX syntax present |
+| 5 | `/public` folder missing | AI assumed `/public` already existed in the project | Had to manually create the folder first before adding any files |
+| 6 | SW catch block | AI's catch block returned `undefined` instead of a valid Response | Added `return new Response('Offline', { status: 503 })` as fallback |
+ 
+---
+ 
+## New Files Added
+```
+/public
+  manifest.json
+  sw.js
+  /icons
+    icon-192x192.png
+    icon-512x512.png
+```
+ 
+## Modified Files
+```
+/client
+  main.html  ← added manifest link and PWA meta tags
+  main.jsx   ← added service worker registration at bottom
+```
+ 
+---
+ 
 *Ateneo de Davao University · AdDU Nation Alumni Hub · 2026*
+ 

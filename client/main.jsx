@@ -798,3 +798,12 @@ function selectModalCat(btn,cat){
   btn.classList.add('selected');
 }
 document.getElementById('campaignModal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+// ===== PWA SERVICE WORKER =====
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('[AdDU Nation] SW registered:', reg.scope))
+      .catch(err => console.error('[AdDU Nation] SW failed:', err));
+  });
+}
